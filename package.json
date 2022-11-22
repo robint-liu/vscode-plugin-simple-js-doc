@@ -1,8 +1,9 @@
 {
   "name": "simple-js-doc",
-  "displayName": "simple-js-doc",
-  "description": "简易的jsdoc注释插件",
+  "displayName": "TSDoc/JSDoc Tags",
+  "description": "Inject TSDoc/JSDoc Tags And Automatically Move Your Cursor",
   "version": "0.0.1",
+  "publisher": "比诺",
   "engines": {
     "vscode": "^1.73.0"
   },
@@ -18,16 +19,16 @@
   "contributes": {
     "keybindings": [
       {
-        "command": "simple-js-doc",
-        "key": "win+i",
+        "command": "inject-tags",
+        "key": "ctrl+i",
         "mac": "cmd+i",
         "when": "editorTextFocus"
       }
     ],
     "commands": [
       {
-        "command": "simple-js-doc",
-        "title": "simple-js-doc"
+        "command": "inject-tags",
+        "title": "inject-tags"
       }
     ]
   },

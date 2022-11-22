@@ -1,10 +1,18 @@
 # simple-js-doc
 
-简易的jsdoc注释插件
+Now, Inject TSDoc/JSDoc Tags And Automatically Move Your Cursor
 
+## Keyboard Shortcuts
+```
+cmd + i
+```
+```
+ctrl + i
+```
 
-## CLI
-```bash
-# 打包
-npm run vsce:package
+## TSDoc/JSDoc Tags
+```
+/**
+ *
+ */
 ```
