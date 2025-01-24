@@ -12,7 +12,5 @@ ctrl + i
 
 ## TSDoc/JSDoc Tags
 ```
-/**
- *
- */
+/**  */
 ```

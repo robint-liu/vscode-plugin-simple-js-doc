@@ -6,14 +6,14 @@ export function activate(context: vscode.ExtensionContext) {
 	const disposable = vscode.commands.registerCommand('inject-tags', () => {
 		const editor = vscode.window.activeTextEditor;
 		editor?.edit(editBuilder => {
-			const line = editor.selection.active.line;
-			const position = editor.selection.active;
-			const tagsStr = '/**\n' + ' * \n' + ' */\n';
-			editBuilder.insert(new vscode.Position(line, 0), tagsStr);
+			const curPosition = editor.selection.active;
+			const tagsStr = '/**  */\n';
+			const insertPosition = new vscode.Position(curPosition.line, 0);
+			editBuilder.insert(insertPosition, tagsStr);
 			setTimeout(() => {
-				const newPosition = position.with(line + 1, 3);
+				const newPosition = insertPosition.with(curPosition.line, 4);
 				editor.selection = new vscode.Selection(newPosition, newPosition);
-			}, 80);
+			}, 50);
 		})
 	});
 

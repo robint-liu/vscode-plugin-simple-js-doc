@@ -3,7 +3,7 @@
   "displayName": "TSDoc/JSDoc Tags",
   "description": "Inject TSDoc/JSDoc Tags And Automatically Move Your Cursor",
   "version": "0.0.1",
-  "publisher": "比诺",
+  "publisher": "robinuuo",
   "engines": {
     "vscode": "^1.73.0"
   },
