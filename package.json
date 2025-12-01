@@ -2,7 +2,7 @@
   "name": "simple-js-doc",
   "displayName": "TSDoc/JSDoc Tags",
   "description": "Inject TSDoc/JSDoc Tags And Automatically Move Your Cursor",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "robinuuo",
   "engines": {
     "vscode": "^1.73.0"

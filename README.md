@@ -14,3 +14,11 @@ ctrl + i
 ```
 /**  */
 ```
+
+## develop tips
+```zsh
+npm run vscode:prepublish
+```
+```zsh
+npm run vsce:package
+```
