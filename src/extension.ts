@@ -7,11 +7,10 @@ export function activate(context: vscode.ExtensionContext) {
 		const editor = vscode.window.activeTextEditor;
 		editor?.edit(editBuilder => {
 			const curPosition = editor.selection.active;
-			const tagsStr = '/**  */\n';
-			const insertPosition = new vscode.Position(curPosition.line, 0);
-			editBuilder.insert(insertPosition, tagsStr);
+			const tagsStr = '/**  */';
+			editBuilder.insert(curPosition, tagsStr);
 			setTimeout(() => {
-				const newPosition = insertPosition.with(curPosition.line, 4);
+				const newPosition = curPosition.translate(0, 4);
 				editor.selection = new vscode.Selection(newPosition, newPosition);
 			}, 50);
 		})
